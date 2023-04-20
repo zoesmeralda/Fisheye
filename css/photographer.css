@@ -1,0 +1,451 @@
+main {
+  width: 100%;
+  height: auto;
+}
+
+main .photographer_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+main .photographer_section .portrait {
+  width: 33%;
+  min-width: 365px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+main .photographer_section .portrait a {
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+main .photographer_section .portrait a article {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .photographer_section .portrait a article img {
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+main .photographer_section .portrait article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .photographer_section .portrait article h3 {
+  color: #d3573c;
+  font-size: 19px;
+  font-weight: 900;
+}
+main .photographer_section .portrait article p {
+  font-size: 14px;
+  color: #757575;
+}
+
+main .photographer_section .portrait article p:last-child {
+  font-size: 12px;
+  color: #757575;
+}
+section.like-storage {
+  font-weight: bold;
+  font-size: large;
+  color: black;
+  cursor: all-scroll;
+  z-index: 250;
+  max-width: 376px;
+  width: 376px;
+  height: 80px;
+  border-radius: 5px;
+  position: fixed;
+  background-color: #d3573c;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 500px) {
+  section.like-storage {
+    width: 300px;
+  }
+}
+section.like-storage h2.like-total-count i {
+  margin-left: 15px;
+}
+#contact_modal {
+  display: none;
+}
+
+.photograph-header {
+  background-color: #fafafa;
+  height: 313px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.photograph-header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+select {
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background: #911c1c;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: none;
+  color: white;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+ 
+  option:hover {
+  background-color: yellow;
+  }
+  select option:hover, select option:active{
+  background-color: #db8876;
+  }
+  
+  select:focus > option:checked {
+  background: rgb(223, 111, 111) !important;
+  }
+  .container-tri {
+  padding: 15px 0;
+  width: 100%;
+  height: 80px;
+  font-weight: 600;
+  }
+  .bloc-filters {
+  display: flex;
+  z-index: 100;
+  left: 50px;
+  top: 0;
+  }
+  .trier-par {
+  margin: 10px 0px 0px 0px;
+  font-weight: 600;
+  }
+  
+
+.carrousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 50px;
+  padding-bottom: 50px;
+}
+
+.media-card {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+.bloc-img,
+.bloc-img img,
+.bloc-img video {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.bloc-img {
+  position: relative;
+}
+.bloc-img button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: zoom-in;
+}
+.text-likes {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -5px;
+  padding: 5px;
+  color: #901c1c;
+}
+.text-likes button {
+  cursor: pointer;
+}
+.heart-likes {
+  display: flex;
+  align-items: center;
+}
+.heart-likes img {
+  width: 15px;
+  height: 15px;
+}
+.p-likes {
+  color: #901c1c;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+#likes-price {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  bottom: 0;
+  right: 25px;
+  background: #db8876;
+  border-radius: 5px;
+  width: 220px;
+  font-weight: 500;
+  z-index: 1;
+}
+#likes-price div {
+  display: flex;
+}
+#likes-price img {
+  padding: 0px 3px;
+}
+.btn-modal {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.bground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: -50px;
+  background-color: rgba(211, 87, 60, 0.5);
+  z-index: -1;
+}
+.hidden {
+  display: none;
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact_button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 11px;
+  width: 170px;
+  height: 70px;
+  border: none;
+  background-color: #901c1c;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact_modal {
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.466);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  border-radius: 5px;
+  position: relative;
+  background-color: #db8876;
+  width: 30%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+}
+.modal header {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 50px;
+  position: relative;
+}
+.modal header img {
+  cursor: pointer;
+}
+.modal header h2 {
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+}
+#name-contact-form{
+  display: flex;
+  color:#757575;
+}
+#close-contact-modal {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color:#d3573c;
+  border: 0;
+}
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+form label {
+  color: #312e2e;
+  font-size: 20px;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: self-start;
+  margin-bottom: 10px;
+}
+form input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  padding: 5px;
+}
+form textarea {
+  height: 150px;
+  align-items: baseline;
+  width: 100%;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+.input {
+  outline: none;
+}
+.input:focus {
+  border: 2px solid #dba69a;
+}
+.error-message {
+  display: none;
+}
+#form-validation {
+  width: 100%;
+  height: 100%;
+  background-color: #db8876;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#form-validation button {
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0;
+  }
+}
+.left-arrow {
+  transform: rotate(180deg);
+}
+#left-arrow #right-arrow {
+  cursor: pointer;
+  color: #901c1c;
+}
+
+.btn-modal {
+  background-color: transparent;
+}
+#zoom-modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.466);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+}
+
+#img-ui {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+#close-zoom {
+  color: #901c1c;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#close-zoom-light {
+  color: #901c1c;
+  background-color: #901c1c;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.for-zoom {
+  max-width: 900px;
+  max-height: 80vh;
+  object-fit: contain;
+}
